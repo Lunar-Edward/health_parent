@@ -10,11 +10,8 @@
     <!--
         CRUD
     -->
-    <insert id="" useGeneratedKeys="true" keyProperty="" keyColumn="">
-        INSERT INTO t_checkitem VALUES (
-        NULL ,#{code},#{name},#{sex},
-        #{age},#{price},#{type},#{attention},
-        #{remark}
-        )
-    </insert>
+    <insert id="add" parameterType="com.itheima.pojo.CheckItem">
+        insert into t_checkitem values
+        (null,#{code},#{name},#{sex},#{age},#{price},#{type},#{remark},#{attention})
+   </insert>
 </mapper>
